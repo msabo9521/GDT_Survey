@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EA793361820A1B3006D1CD7 /* MJSArrayObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA793351820A1B3006D1CD7 /* MJSArrayObjects.m */; };
 		2EAFF203181EFB4C003ADBC5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EAFF202181EFB4C003ADBC5 /* Foundation.framework */; };
 		2EAFF205181EFB4C003ADBC5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EAFF204181EFB4C003ADBC5 /* CoreGraphics.framework */; };
 		2EAFF207181EFB4C003ADBC5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EAFF206181EFB4C003ADBC5 /* UIKit.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2EA793341820A1B3006D1CD7 /* MJSArrayObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJSArrayObjects.h; sourceTree = "<group>"; };
+		2EA793351820A1B3006D1CD7 /* MJSArrayObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJSArrayObjects.m; sourceTree = "<group>"; };
 		2EAFF1FF181EFB4C003ADBC5 /* picker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = picker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EAFF202181EFB4C003ADBC5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2EAFF204181EFB4C003ADBC5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -117,6 +120,8 @@
 				2EAFF214181EFB4C003ADBC5 /* Main.storyboard */,
 				2EAFF217181EFB4C003ADBC5 /* MJSViewController.h */,
 				2EAFF218181EFB4C003ADBC5 /* MJSViewController.m */,
+				2EA793341820A1B3006D1CD7 /* MJSArrayObjects.h */,
+				2EA793351820A1B3006D1CD7 /* MJSArrayObjects.m */,
 				2EAFF21A181EFB4C003ADBC5 /* Images.xcassets */,
 				2EAFF209181EFB4C003ADBC5 /* Supporting Files */,
 			);
@@ -253,6 +258,7 @@
 				2EAFF20F181EFB4C003ADBC5 /* main.m in Sources */,
 				2EAFF219181EFB4C003ADBC5 /* MJSViewController.m in Sources */,
 				2EAFF213181EFB4C003ADBC5 /* MJSAppDelegate.m in Sources */,
+				2EA793361820A1B3006D1CD7 /* MJSArrayObjects.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +469,7 @@
 				2EAFF233181EFB4C003ADBC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2EAFF234181EFB4C003ADBC5 /* Build configuration list for PBXNativeTarget "pickerTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +478,7 @@
 				2EAFF236181EFB4C003ADBC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
