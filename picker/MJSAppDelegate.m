@@ -7,12 +7,34 @@
 //
 
 #import "MJSAppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation MJSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [Parse setApplicationId:@"fokTXQTWmIJhGw3VvUhtYVdNOOjrEMTslTyXGvUd"
+                  clientKey:@"Exsh3fEBfEb1RR12dwQl0n1s2tbHdZJKJ24Fc9QW"];
+    PFUser *currentUser = [PFUser currentUser];
+    
+    if (!currentUser) {
+        // Dummy username and password
+        PFUser *user = [PFUser user];
+        user.username = @"Matt";
+        user.password = @"password";
+        user.email = @"Matt@example.com";
+        
+        [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+            if (error) {
+                // Assume the error is because the user already existed.
+                [PFUser logInWithUsername:@"Matt" password:@"password"];
+            }
+        }];
+    }
+    
+
+    
     return YES;
 }
 							
